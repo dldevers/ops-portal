@@ -21,8 +21,8 @@ Phase 4
 
 Phase 5
 - UI
--- Add stylesheet
--- Basic dashboard layout
--- Navigation bar
--- Health status card
--- User management page
+    - Add stylesheet
+    - Basic dashboard layout
+    - Navigation bar
+    - Health status card
+    - User management page
