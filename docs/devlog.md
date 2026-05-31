@@ -6,3 +6,8 @@
 - Initialized npm project
 - Added basic HTTP server
 - Added /health endpoint
+
+2026-05-31
+
+- Added basic HTTP routing
+- Added /health, "/", and ""error/404" endpoints
