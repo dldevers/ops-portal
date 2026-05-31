@@ -8,6 +8,7 @@ Phase 2
 - Express
 - configuration
 - Docker
+- CI/CD
 
 Phase 3
 - user API
@@ -17,7 +18,7 @@ Phase 3
 Phase 4
 - authentication
 - RBAC
-- CI/CD
+
 
 Phase 5
 - UI
