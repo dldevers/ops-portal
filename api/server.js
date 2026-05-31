@@ -4,26 +4,23 @@ const hostname = '127.0.0.1';
 const port = 3000;
 
 const server = createServer((req, res) => {
-    if (req.url === "/health") {
-        res.writeHead(200, {
-            "Content-Type": "application/json"
-        });
-        res.end(JSON.stringify({ status: "ok" }));
-        return;
-    }
+  switch (req.url) {
+    case "/health":
+      res.writeHead(200, {"Content-Type": "application/json"});
+      res.end(JSON.stringify({status: "ok"}));
+    break;
+    
+    case "/":
+      res.writeHead(200, {"Content-Type": "text/html"});
+      res.end("<h1>Ops Portal</h1>");
+    break;
 
-    if (req.url === "/") {
-        res.writeHead(200, {
-            "Content-Type": "text/html"
-        });
-        res.end("<h1>Ops Portal</h1>");
-        return;
-    }
-
-    res.writeHead(404, {
-        "Content-Type": "text/plain"
-    });
+    default:
+    res.writeHead(404, {"Content-Type": "text/plain"});
     res.end("Not Found");
+      break;
+    }
+
 });
 
 server.listen(port, hostname, () => {
