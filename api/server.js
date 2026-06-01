@@ -1,9 +1,11 @@
 const express = require('express');
+const path = require('path');
 const app = express();
-  app.use(express.json());
-  app.use(express.urlencoded({ extended: true }));
 const port = 3000;
-const hostname = '127.0.0.1';
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Start the server
 app.listen(port, () => {
   console.log(`User Subscription Portal listening at http://localhost:${port}`);
@@ -11,7 +13,7 @@ app.listen(port, () => {
 
 // Routing:
 app.get('/', (req, res) => {
-  res.send('<h1>Ops Portal</h1>');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 app.get('/health', (req, res) => {
 res.send(JSON.stringify({status: "ok"}));
