@@ -1,27 +1,19 @@
-const { createServer } = require('node:http');
-
-const hostname = '127.0.0.1';
+const express = require('express');
+const app = express();
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: true }));
 const port = 3000;
-
-const server = createServer((req, res) => {
-  switch (req.url) {
-    case "/health":
-      res.writeHead(200, {"Content-Type": "application/json"});
-      res.end(JSON.stringify({status: "ok"}));
-    break;
-    
-    case "/":
-      res.writeHead(200, {"Content-Type": "text/html"});
-      res.end("<h1>Ops Portal</h1>");
-    break;
-
-    default:
-    res.writeHead(404, {"Content-Type": "text/plain"});
-    res.end("Not Found");
-    break;
-    
+const hostname = '127.0.0.1';
+// Start the server
+app.listen(port, () => {
+  console.log(`User Subscription Portal listening at http://localhost:${port}`);
 });
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+// Routing:
+app.get('/', (req, res) => {
+  res.send('<h1>Ops Portal</h1>');
 });
+app.get('/health', (req, res) => {
+res.send(JSON.stringify({status: "ok"}));
+});
+    
