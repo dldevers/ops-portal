@@ -4,7 +4,7 @@
 - [x] routing
 - [ ] basic logging
 
-## Phase 2:
+### Phase 2:
 - [x] Express
 - [x] Docker:
   - [x] docker compose up --build works
@@ -14,16 +14,16 @@
 - [ ] Configuration
 - [ ] CI pipeline passes
 
-## Phase 3
+### Phase 3
 - [ ] user API
 - [ ] subscription API
 - [ ] audit logging
 
-## Phase 4
+### Phase 4
 - [ ] authentication
 - [ ] RBAC
 
-## Phase 5
+### Phase 5
 - [ ] UI
 - [ ] Add stylesheet
 - [ ] Basic dashboard layout
