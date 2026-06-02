@@ -10,6 +10,7 @@ Phase 2
 - Local deployment automation
 - CI/CD
 - Configuration
+
 Phase 2 Complete When:
 - docker compose up --build works
 - portal reachable on localhost:3000
@@ -27,8 +28,8 @@ Phase 4
 
 Phase 5
 - UI
-    - Add stylesheet
-    - Basic dashboard layout
-    - Navigation bar
-    - Health status card
-    - User management page
+- Add stylesheet
+- Basic dashboard layout
+- Navigation bar
+- Health status card
+- User management page
