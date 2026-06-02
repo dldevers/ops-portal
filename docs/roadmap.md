@@ -6,10 +6,10 @@ Phase 1
 
 Phase 2
 - Express
-- configuration
 - Docker
 - Local deployment automation
 - CI/CD
+- Configuration
 
 Phase 3
 - user API
