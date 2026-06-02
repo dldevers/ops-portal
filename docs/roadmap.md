@@ -9,8 +9,7 @@
 - [x] Docker:
   - [x] docker compose up --build works
   - [x] portal reachable on localhost:3000
-  -[x]  /health returns 200
-- [x] Local deployment automation
+  - [x] Local deployment automation
 - [ ] CI/CD
 - [ ] Configuration
 - [ ] CI pipeline passes
