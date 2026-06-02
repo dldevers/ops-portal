@@ -11,11 +11,11 @@
 - CI/CD
 - Configuration
 
-# Phase 2 Complete When:
-- docker compose up --build works
-- portal reachable on localhost:3000
-- /health returns 200
-- CI pipeline passes
+## Phase 2 Complete When:
+- [x] docker compose up --build works
+- [x] portal reachable on localhost:3000
+- [x] /health returns 200
+- [ ] CI pipeline passes
 
 # Phase 3
 - user API
