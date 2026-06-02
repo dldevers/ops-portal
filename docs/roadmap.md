@@ -8,9 +8,10 @@
 - [x] Docker:
   - [x] docker compose up --build works
   - [x] portal reachable on localhost:3000
-- [ ] CI/CD
+- [ ] CI/CD:
+    - [ ] CI pipeline passes
 - [ ] Configuration
-- [ ] CI pipeline passes
+
 - [x] Local deployment automation
 ### Phase 3
 - [ ] user API
