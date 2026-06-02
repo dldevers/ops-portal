@@ -8,6 +8,7 @@ Phase 2
 - Express
 - configuration
 - Docker
+- Local deployment automation
 - CI/CD
 
 Phase 3
@@ -18,7 +19,6 @@ Phase 3
 Phase 4
 - authentication
 - RBAC
-
 
 Phase 5
 - UI
