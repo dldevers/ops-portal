@@ -31,3 +31,31 @@ The application will be available at:
 ```text
 http://localhost:3000
 ```
+
+## Operational Principles
+
+- Design for failure
+- Automate repetitive validation
+- Keep recovery paths simple
+- Make system state visible
+- Treat reliability as a product feature
+
+## CI/CD
+
+This repository uses GitHub Actions to validate every push and pull request.
+
+Current pipeline:
+
+- Install dependencies with npm ci
+- Run lint if configured
+- Run test validation
+- Run build validation
+
+## Roadmap
+
+- Add operational dashboard UI
+- Add health/status endpoint documentation
+- Add Docker-based local runtime instructions
+- Add basic automated tests
+- Add deployment workflow
+- Add observability/logging examples
