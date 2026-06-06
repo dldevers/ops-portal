@@ -1,12 +1,13 @@
 {
   "name": "ops-portal",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "DevOps operations portal prototype",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
     "dev": "node --watch src/server.js",
-    "start": "node src/server.js"
+    "test": "echo \"No automated tests configured yet\" && exit 0",
+    "build": "echo \"No build step required for Node/Express prototype\" && exit 0"
   },
   "keywords": [],
   "author": "",
