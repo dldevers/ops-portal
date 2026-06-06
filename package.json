@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
-    "test": "echo \"No automated tests configured yet\" && exit 0",
+    "test": "node --test",
     "build": "echo \"No build step required for Node/Express prototype\" && exit 0"
   },
   "keywords": [],
