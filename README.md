@@ -1,4 +1,5 @@
 # Self-Service Subscription Portal
+![CI](https://github.com/dldevers/ops-portal/actions/workflows/ci.yml/badge.svg)
 ## Overview
 
 Ops Portal is a sanitized DevOps/platform engineering demo that models a real internal operations workflow, replacing manual ticket-driven API changes with a self-service portal, validation, audit logging, and CI/CD automation.
