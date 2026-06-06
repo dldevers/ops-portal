@@ -19,3 +19,7 @@ The project demonstrates how platform teams can reduce operational toil by safel
 - Toggle subscriptions safely
 - Write all changes to an audit log
 - Run locally via Docker Compose
+## Running with Docker
+
+```bash
+docker compose up --build
