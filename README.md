@@ -23,3 +23,10 @@ The project demonstrates how platform teams can reduce operational toil by safel
 
 ```bash
 docker compose up --build
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000
+```
