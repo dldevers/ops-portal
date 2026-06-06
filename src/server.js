@@ -1,20 +1,18 @@
 const express = require('express');
+const helmet = require('helmet');
+const cors = require('cors');
+const morgan = require('morgan');
 const path = require('path');
+
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+
+app.use(helmet());
+app.use(cors());
+app.use(morgan('combined'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../public')));
 
-// Start the server
-app.listen(port, () => {
-  console.log(`User Subscription Portal listening at http://localhost:${port}`);
-});
-
-// Routing:
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
 app.get('/health', (req, res) => {
   res.status(200).json({
     status: 'ok',
@@ -23,7 +21,9 @@ app.get('/health', (req, res) => {
     uptime: process.uptime(),
     timestamp: new Date().toISOString()
   });
-    app.get('/status', (req, res) => {
+});
+
+app.get('/status', (req, res) => {
   res.status(200).json({
     service: 'ops-portal',
     environment: process.env.NODE_ENV || 'development',
@@ -36,4 +36,8 @@ app.get('/health', (req, res) => {
     },
     timestamp: new Date().toISOString()
   });
+});
+
+app.listen(port, () => {
+  console.log(`Ops Portal listening at http://localhost:${port}`);
 });
