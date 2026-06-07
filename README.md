@@ -20,7 +20,18 @@ Current capabilities:
 - GitHub Actions CI pipeline
 - Basic npm validation scripts
 - Recruiter-facing documentation foundation
+## Engineering Focus
 
+This project is intentionally scoped as a DevOps/SRE proof-of-work prototype rather than a feature-complete product.
+
+Current focus areas:
+
+- Reproducible local runtime
+- Automated CI validation
+- Health and status endpoints
+- Smoke testing for operational readiness
+- Professional operations dashboard
+- Clear roadmap for reliability-focused improvements
 ## Planned Stack
 
 - Node.js
